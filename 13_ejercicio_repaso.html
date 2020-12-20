@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        /*
+        * Crear un array de 11 ints. Pedir al usuario que introduzca valores entre 0 y 10. Cada vez que introduzca un dígito, añadir uno al valor en esa posición del array.
+        * Si por ejemplo introduce un 3, sumar uno a la posición 3. Mostrar en pantalla los valores. Si introduce un número mayor que 10, decir que ese número es incorrecto.
+        * Si introduce un número negativo, mostrar en pantalla el número de cada posición y el valor que contiene. Por ejemplo, si introduce 7, 7, 7, 5, 6, 5, 9, 9, 10, -1 mostrar:
+        * 0
+        * 1	0
+        * 2	0
+        * 3	0
+        * 4	0
+        * 5	2
+        * 6	1
+        * 7	3
+        * 9	2
+        * 10 1
+        */
+        let arraynumeros = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];            
+        let numeroRecibido = prompt("Introduzca un número del 0 al 10");
+                while (numeroRecibido >= 0){              
+
+                    //comprobar que el numero es valido
+                    if (numeroRecibido > 10){
+                        alert("Introduzca un número igual o menor que 10.")
+                                        }
+                    else {
+                       arraynumeros[numeroRecibido] = arraynumeros[numeroRecibido] + 1 
+                    }
+                    
+                    numeroRecibido = prompt("Introduzca un número del 0 al 10");
+                    
+                } 
+                console.table(arraynumeros)
+                
+
+    </script>
+</body>
+
+</html>
